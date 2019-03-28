@@ -1,13 +1,13 @@
 ## Agile Software Development
 ### Values and Principles
 
-Xing Zhou, Integral
-
 ---
 
 ## The Value of Software
 
-![business value]()
+![software logo](/slides/software.jpg)
+
+![business value]() 
 
 note:
 - software does not have value by itself
@@ -18,7 +18,7 @@ note:
 
 ## The Ideal
 
-![triangle of project management]()
+![triangle of project management](/slides/project-triangle.png) <!-- .element width="50%" -->
 
 note:
 - the ideal outcome for a business is that they can get valuable software that is
