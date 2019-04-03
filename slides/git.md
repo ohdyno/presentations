@@ -1,11 +1,11 @@
-## Git It!
+# Git It!
 
 ---
 
 ## Version Control System
 
 - Version Control System (VCS): manage changes to data <!-- .element class="fragment" -->
-- Centralize VCS: CVS, SVN, etc.<!-- .element class="fragment" -->
+- Centralize VCS: CVS, SVN, Perforce, etc.<!-- .element class="fragment" -->
 - Distributed VCS: Git, Mercurial (Hg), Bazaar, etc.<!-- .element class="fragment" -->
 
 note:
@@ -26,10 +26,10 @@ note:
 
 ## Remotes and References
 
-- remotes:
+- remotes: <!-- .element class="fragment" -->
   - `git remote add <name> <url>`
   - `git remote set-url <name> <url>`
-- references:
+- references:<!-- .element class="fragment" -->
   - `git tag <name> <reference>`
   - `git branch <name> <reference>`
 
