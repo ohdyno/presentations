@@ -24,6 +24,17 @@ note:
 - encourages easy and performant branching and merging
 
 
+## Remotes and References
+
+- remotes:
+  - `git remote add <name> <url>`
+  - `git remote set-url <name> <url>`
+- references:
+  - `git tag <name> <reference>`
+  - `git branch <name> <reference>`
+
+---
+
 ## Operations
 
 ![git operations](/slides/git-operations.png) <!-- .element width="80%" -->
@@ -33,9 +44,9 @@ note:
 
 ![git remote operations](/slides/git-remote-operations.png) <!-- .element width="80%" -->
 
-- `git clone`
-- `git pull`
-- `git push`
+- `git clone <url>`
+- `git pull <remote name> <reference>`
+- `git push <remote name> <reference>`
 
 
 ## Local Operations
@@ -44,6 +55,9 @@ note:
 
 - `git add`
 - `git commit`
+- `git log`
+- `git diff`
+- `git show`
 
 ---
 
@@ -64,7 +78,7 @@ note:
 - `git add -u .`
 
 
-## More Esoteric Operations (Google's Your Best Friend)
+## More Operations (Google's Your Best Friend)
 
 - `git show-branch`
 - `git cherry-pick <reference>`
@@ -79,10 +93,13 @@ note:
 
 ## Resources
 
+- `man git-branch`, `man git-commit`, etc.
 - [Official (Free) Git Book][git-book]
 - [Atlassian Interactive Git][atlassian-git]
 - [Learning Git Branching][learn-git-branching]
+- [15 Git Commands You May Not Know][15-git-commands]
 
+[15-git-commands]: https://dev.to/zaiste/15-git-commands-you-may-not-know-4a8j
 [git-book]: https://git-scm.com/book/en/v2
 [learn-git-branching]: https://learngitbranching.js.org/
 [atlassian-git]: https://www.atlassian.com/git
