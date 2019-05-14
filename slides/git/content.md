@@ -16,7 +16,7 @@ note:
 
 ## Git Concepts
 
-![git logo](/slides/git/git-logo.png.png) <!-- .element class="stretch" -->
+![git logo](/slides/git/git-logo.png) <!-- .element class="stretch" -->
 
 note:
 - created by Linus Torvalds
@@ -37,12 +37,12 @@ note:
 
 ## Operations
 
-![git operations](/slides/git/git-operations.png.png) <!-- .element width="80%" -->
+![git operations](/slides/git/git-operations.png) <!-- .element width="80%" -->
 
 
 ## Remote Operations
 
-![git remote operations](/slides/git/git-remote-operations.png.png) <!-- .element width="80%" -->
+![git remote operations](/slides/git/git-remote-operations.png) <!-- .element width="80%" -->
 
 - `git clone <url>`
 - `git pull <remote name> <reference>`
@@ -51,7 +51,7 @@ note:
 
 ## Local Operations
 
-![git local operations](/slides/git/git-local-operations.png.png) <!-- .element width="80%" -->
+![git local operations](/slides/git/git-local-operations.png) <!-- .element width="80%" -->
 
 - `git add`
 - `git commit`
