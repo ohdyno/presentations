@@ -5,8 +5,8 @@
 
 ## The Value of Software
 
-![software logo](/slides/software.jpg) <!-- .element class="fragment inline-image"  -->
-![business value](/slides/money.jpg) <!-- .element class="fragment inline-image" width="40%"  -->
+![software logo](/slides/agile-values-principles/software.jpg) <!-- .element class="fragment inline-image"  -->
+![business value](/slides/agile-values-principles/money.jpg) <!-- .element class="fragment inline-image" width="40%"  -->
 
 note:
 - software does not have value by itself
@@ -17,7 +17,7 @@ note:
 
 ## The Ideal
 
-![triangle of project management](/slides/project-triangle.png) <!-- .element width="50%" -->
+![triangle of project management](/slides/agile-values-principles/project-triangle.png) <!-- .element width="50%" -->
 
 note:
 - the ideal outcome for a business is that they can get valuable software that is
@@ -28,7 +28,7 @@ note:
 
 ## The Reality
 
-![sad face becuase of software development failure](/slides/sad-face.jpg)
+![sad face becuase of software development failure](/slides/agile-values-principles/sad-face.jpg)
 
 note:
 - reality:
@@ -40,7 +40,7 @@ note:
 
 ## The Solution!
 
-![waterfall model](/slides/waterfall-model.svg) <!-- .element width="70%" -->
+![waterfall model](/slides/agile-values-principles/waterfall-model.svg) <!-- .element width="70%" -->
 
 note: 
 - inspired from manufaturing and applied it to software engineering.
@@ -60,7 +60,7 @@ issues:
 
 ## February 2001. Snowbird, Utah
 
-![image for original agile signatures](/slides/agile-background.jpg) <!-- .element width="70%" -->
+![image for original agile signatures](/slides/agile-values-principles/agile-background.jpg) <!-- .element width="70%" -->
 
 note:
 - seasoned developers
@@ -92,8 +92,8 @@ notable names:
 
 
 ### Individuals and interactions over processes and tools
-![individuals and interactions](/slides/individuals-interactions.png) <!-- .element width="60%" -->
-![process and tools](/slides/process-tools.jpg) <!-- .element width="25%" -->
+![individuals and interactions](/slides/agile-values-principles/individuals-interactions.png) <!-- .element width="60%" -->
+![process and tools](/slides/agile-values-principles/process-tools.jpg) <!-- .element width="25%" -->
 
 note:
 - people are the most important ingredient of success
@@ -105,8 +105,8 @@ note:
 
 
 ### Working software over comprehensive documentation
-![working software](/slides/working-software.jpg) <!-- .element width="60%" -->
-![documentation](/slides/documentation.jpg) <!-- .element width="25%" -->
+![working software](/slides/agile-values-principles/working-software.jpg) <!-- .element width="60%" -->
+![documentation](/slides/agile-values-principles/documentation.jpg) <!-- .element width="25%" -->
 
 "Produce no document unless its need is immediate and significant." - Martin's first law of documentation <!-- .element class="fragment" style="font-size: 16pt" -->
 
@@ -120,8 +120,8 @@ note:
 
 
 ### Customer collaboration over contract negotiation
-![customer collaboration](/slides/collaboration.jpg) <!-- .element width="60%" -->
-![contract](/slides/contract.jpg) <!-- .element width="25%" -->
+![customer collaboration](/slides/agile-values-principles/collaboration.jpg) <!-- .element width="60%" -->
+![contract](/slides/agile-values-principles/contract.jpg) <!-- .element width="25%" -->
 
 note:
 - successful projects involve customer feedback on a regular and frequent basis.
@@ -132,8 +132,8 @@ note:
 
 
 ### Responding to change over following a plan
-![respond to change](/slides/feedback.png) <!-- .element width="60%" -->
-![gantt chart](/slides/plan.png) <!-- .element width="25%" -->
+![respond to change](/slides/agile-values-principles/feedback.png) <!-- .element width="60%" -->
+![gantt chart](/slides/agile-values-principles/plan.png) <!-- .element width="25%" -->
 
 note:
 - the traditional success criteria is "how close were we to the plan"
