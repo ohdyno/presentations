@@ -76,23 +76,84 @@ Automate the tests to prevent human error (which would reduce the confidence the
 
 You can let your users test the system, but only if you have the write tools and it's the right domain. 
  
+
+# Test-Driven Development
+
  
 ## Why do we do TDD?
 
-Deliver business value (long-term vs short-term)
-Clean code
-Refactor
-Confidence
-Tests
-Test-first
+- Deliver business value <!-- .element class="fragment" -->
+- Clean code <!-- .element class="fragment" -->
+- Refactor <!-- .element class="fragment" -->
+- Confidence <!-- .element class="fragment" -->
+- Tests <!-- .element class="fragment" -->
+- Test-first <!-- .element class="fragment" -->
+
+note:
+- we are not paid to write tests
+- we are paid to deliver business value through software.
+    - especially when considering short term vs long term
 
 ## History TDD / BDD and Unit Testing
-QA-written Tests
-Developer Tests
+(according to Kent Beck, as I understand it...)
+
+### History of Unit Testing
+Testers tested, Coders coded
+
 Sequential / Interdependent Tests
+
+notes:
+Initially tests were written by testers
+
+
+Developer Tests
 Unit test
+
+
+note:
+- Kent worked with a programmer who wrote 5 lines of tests for every 1 line of code.
+    - produced more value
+    - more efficient
+    - more relaxed
+- 94ish
+    - Kent was consulting with a client in Chicago.  Wants to do automated testing.
+    - No good way to get developers to write automated tests.
+    - Create Testing Framework from how Smalltalk developers produced software
+    - Create SUnit
+
+
 SUnit
 JUnit
+xUnit
+
+note:
+- Kent create the SUnit (test first)
+- Kent and Eric Gamma pair programmed and created JUnit (97ish) (test first)
+- Kent shared JUnit with Martin Fowler
+
+
+
+Behavior-Driven Development
+Gherkin
+Cucumber
+RSpec
+
+note:
+- Dan North created the term to highlight the need to understand the software from a behavior standpoint
+instead of an implementation standpoint.
+- He wanted to bridge the gap between communication between the business and the developers.
+
+
+### History of TDD
+
+Kent remembered a book talking about programmers writing out the expected output on the output tape,
+before the program was written.
+
+"Programmers always have written test first."
+
+"Kent re-discovered."
+
+
 
 ## The Testing Pyramid
 Types of Tests
