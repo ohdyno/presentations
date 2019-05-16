@@ -48,10 +48,35 @@ if the system isn't easy to test in an automated fashion.
 
 ## Now, is it always necessary to do automate testing or testing in general?
 
-As the rule of internet headline goes, the answer to any headline question is "No".
- 
-How could you get away from not testing?
+As the rule of internet headline goes, the answer to any headline question is "No".  How do you get away
+with no automated testing? If we go back to gaining confidence that the software that's created works,
+the best confidence to see that the software works is to validate it in production.
 
+Just let your users test! Right???
+
+Obviously, since you would be subject your users to potential buggy software, you would want to have
+good monitoring systems and a good, quick rollback strategy.  Monitor system to detect
+issues, and rollback strategy to fix the bugs.
+
+It also depends on what are the impacts on the users if there are issues.  If you are creating
+financial software where you could cost your users millions of dollars due to bugs,
+then it probably isn't a great idea to validate your software in production.
+
+However, if you are building a simple web app to display information, then it might be okay to validate
+in production.
+ 
+
+## To summarize
+
+We are not paid to write tests.  We are paid to produce software that delivers business value.
+
+Tests help us increase confidence for the stakeholders that the software does produce the desired value.
+
+Automate the tests to prevent human error (which would reduce the confidence the tests provide).
+
+You can let your users test the system, but only if you have the write tools and it's the right domain. 
+ 
+ 
 ## Why do we do TDD?
 
 Deliver business value (long-term vs short-term)
