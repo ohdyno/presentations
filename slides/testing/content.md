@@ -189,7 +189,7 @@ before the program was written.
 
 ## Behavior-Driven Development
 
-![cucumber](/slides/testing/cucumber.png) <!-- .element width="60%" -->
+![cucumber](/slides/testing/cucumber.png) <!-- .element width="30%" -->
 - Gherkin
 - Cucumber
 - RSpec
@@ -198,24 +198,67 @@ note:
 - Dan North created the term to highlight the need to understand the software from a behavior standpoint
 instead of an implementation standpoint.
 - He wanted to bridge the gap between communication between the business and the developers.
+- Gherkin: given/when/then
+- He sees a large test suite of cucumber tests as an anti-pattern
+    - Too much focused on the tooling and following examples.
+    - Loose communicate between business and developers.
 
 
-## Benefits of TDD
+## Benefits of TDD/BDD
+
+- Confidence in Functionality
+- Simple Design
+- Communication
 
 note:
-- high functional code coverage
-- fewer regression
-- harder to spot, but it reveals design shortcomings
+- Communication in pairs, between technical and non-technical stakeholders, etc.
+ 
 
+## Q: What about tests other than unit tests?
+
+note:
+When I hear this question, I usually think of common, but not very useful testing pyramid.
 
 ## The Testing Pyramid
 
 ![testing pyramid](/slides/testing/testing-pyramid.jpg) <!-- .element width="45%" -->
 ![testing pyramid from cohn](/slides/testing/test-pyramid-cohn.png) <!-- .element width="45%" -->
 
+note:
+I mention useless because the most of the words are interpreted differently by different people.
+Take "Unit" for example...
 
-## Qualities of a Test Suite
+
+## Qualities of a Good Test Suite
 - Confidence
 - Clean
 - Freedom to Refactor
 - Fast
+
+note:
+Very hard to achieve all four at the same time, for all tests.
+Fast vs Confidence (mocking)
+
+
+### Q: What about tests other than unit tests?
+### A: How is the quality of your test suite?
+
+note:
+Growth of your system:
+- Early on, mostly integration issues. Test those integrations.
+- As domain gets richer, introduce more class-level tests, component-level tests, etc.
+
+---
+
+## Take Aways
+- Tests provide evidence that increases stakeholder's confidence.
+- Use TDD to deliver business value in the long-term.
+- Evaluate tests against the qualities of the test suite.
+
+
+note:
+- It takes effort and creativity to collect the evidence for every kind of stakeholders.
+- TDD is not sufficient to guarantee long-term business value delivery, but it is a crucial piece.
+- It's not easy, but it does get easier as you do it more often.
+- Evaluate the tests against the qualities, not the test pyramid.  Composition of the test suite
+will always be changing as the software changes.
