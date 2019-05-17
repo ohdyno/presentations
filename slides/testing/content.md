@@ -112,7 +112,7 @@ in production.
 
 ---
 
-## Test-Driven Development
+## TDD / BDD
 
 ![test-driven development](/slides/testing/tdd.png) <!-- .element width="60%" -->
 
@@ -121,6 +121,12 @@ Has anyone here never heard of test driven development?
 One observation:
 - almost everyone that I know always consider the "red" phase as the starting point
 - define refactoring
+
+
+## Brief History of TDD / BDD
+
+![kent beck](/slides/testing/kent.jpg) <!-- .element width="30%" -->
+![dan north](/slides/testing/dan-north.jpg) <!-- .element width="30%" -->
 
 
 ## Why do we do TDD?
@@ -133,13 +139,7 @@ One observation:
 - Test-first <!-- .element class="fragment" -->
 
 
-## Brief History of TDD / BDD
-
-![kent beck](/slides/testing/kent.jpg) <!-- .element width="30%" -->
-![dan north](/slides/testing/dan-north.jpg) <!-- .element width="30%" -->
-
-
-## Benefits of TDD/BDD
+## Benefits of Test-First (TDD/BDD)
 
 - Confidence in Functionality
 - Simple Design
@@ -149,7 +149,7 @@ note:
 - Communication in pairs, between technical and non-technical stakeholders, etc.
 
 
-## Q: What about tests other than unit tests?
+## Q: What types of tests should I write?
 
 note:
 When I hear this question, I usually think of common, but not very useful testing pyramid.
@@ -176,8 +176,8 @@ Very hard to achieve all four at the same time, for all tests.
 Fast vs Confidence (mocking)
 
 
-### Q: What about tests other than unit tests?
-### A: How is the quality of your test suite?
+## Q: What types of tests should I write?
+### A: How is the quality of my test suite?
 
 note:
 Growth of your system:
@@ -187,8 +187,8 @@ Growth of your system:
 
 ## Two Schools of TDD
 
-![xp explained](/slides/testing/xp-explained.jpg) <!-- .element width="45%" -->
-![goos](/slides/testing/goos.jpg) <!-- .element width="45%" -->
+![xp explained](/slides/testing/xp-explained.jpg) <!-- .element width="40%" -->
+![goos](/slides/testing/goos.jpg) <!-- .element width="40%" -->
 
 note:
 - inside out vs outside in
