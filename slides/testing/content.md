@@ -212,12 +212,13 @@ instead of an implementation standpoint.
 
 note:
 - Communication in pairs, between technical and non-technical stakeholders, etc.
- 
+
 
 ## Q: What about tests other than unit tests?
 
 note:
 When I hear this question, I usually think of common, but not very useful testing pyramid.
+
 
 ## The Testing Pyramid
 
@@ -254,7 +255,6 @@ Growth of your system:
 - Tests provide evidence that increases stakeholder's confidence.
 - Use TDD to deliver business value in the long-term.
 - Evaluate tests against the qualities of the test suite.
-
 
 note:
 - It takes effort and creativity to collect the evidence for every kind of stakeholders.
