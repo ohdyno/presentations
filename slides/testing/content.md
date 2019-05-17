@@ -1,83 +1,122 @@
-## Testing
+# Testing
 
-## Why do we test?
+* Value of (Automated) Testing
+* Test-Driven Development
 
-Surely it is because we are paid to test.
+note:
+Before we talk about testing, since almost everyone here is involved in software,
+let's talk about software real quick and its value.
 
-By this metric, the more tests we have, the higher code coverage we have,
-the better we bring to the business.
 
-Wrong!
+## What is the value of software?
 
-To discuss testing, we have to understand the value of software.
+![working software](/slides/testing/working-software.jpg) <!-- .element width="60%" -->
 
-What is the value of software?
-
+note:
 Is software itself inherently valuable?  Maybe.  Since, done right, it captures
 the mental model of a problem and solution space so precise that a computer is able to understand
 the instruction set and execute.
-
 However, fundamentally, software is only valuable when it delivers user value, and therefore, business
 value.
+- If you are like me, I used to feel that the code itself is useful.
+    - Clean design
+    - Modular
+    - Well-documented
+    - Well-tested
+- However, it's not the right perspective to view code.
+- Code is actually risk.
+- Every single line of code is a risk.
+    - A financial risk: cost of maintenance, cost of change
+    - A security risk: a larger attack surface
+    - A business risk: code create bugs -> tarnish the company brand
+    - A user risk: severe user harm from bugs such as financial institutions losing track of the user's money
+        - Example: TSB bank botched upgrade, 3 weeks of system not being accessible, people's loans are not the right amount
 
-So, if software is valuable only when delivering user value, and everything else we do is pretty much
-a cost.  What's the value of testing?
 
-**We test in order to increase confidence for stakeholders through evidence.**
+## Business Value
 
-To unpack, to increase confidence = being pragmatic, do things with balance.
-Stakeholders = anyone that is affected by the software (users, business, developers, operations, legal)
-Evidence = takes creativity and ingenuity to come up with evidence for all the stakeholders.
+![adding value](/slides/testing/adding-value.jpg) <!-- .element width="60%" -->
 
-### To gain confidence that our software "does the right thing"
+note:
+So, if software is only valuable when it is bringing business value...
 
 
-### Why automated testing?
+## Why do we test?
 
+![software testing](/slides/testing/software-test.jpg) <!-- .element width="60%" -->
+
+note:
+It certainly does not seem to bring in business value.
+
+
+## We test in order
+
+## to _increase confidence_
+
+## for _stakeholders_
+
+## through _evidence_
+
+note:
+To unpack
+- Stakeholders = anyone that is affected by the software (users, business, developers, operations, legal)
+- Increase confidence = being pragmatic, do things with balance.
+- Evidence = takes creativity and ingenuity to come up with evidence for all the stakeholders.
+So, we have established the goal of testing.
+
+
+## Why automated testing?
+
+![test automation](/slides/testing/test-automation.jpg) <!-- .element width="60%" -->
+
+note:
 Given that we've established the goal of testing.  Why do we want to automate testing?
-
-We want to automate testing because in order to maintain confidence in our software doing the right thing,
+- We want to automate testing because in order to maintain confidence in our software doing the right thing,
 we need to test often, ideally very often.
-
-However, we know that humans are not very good at doing repetitive tasks well.  So, we offload that responsibility
+- However, we know that humans are not very good at doing repetitive tasks well.  So, we offload that responsibility
 to the machine.
-
-Other considerations for automation.  Being able to automate a system requires a good understanding
+- Other considerations for automation.  Being able to automate a system requires a good understanding
 of the system (state, inputs, and output).  It challenges us to understand our system and make improvements
 if the system isn't easy to test in an automated fashion.
+**Question: Now, is it always necessary to do automate testing or testing in general?**
 
-## Now, is it always necessary to do automate testing or testing in general?
 
-As the rule of internet headline goes, the answer to any headline question is "No".  How do you get away
+## Test (only) In Production! 
+
+![roll back](/slides/testing/roll-back.jpeg) <!-- .element width="45%" -->
+![analytics](/slides/testing/analytics.jpg) <!-- .element width="45%" -->
+
+note:
+- As the rule of internet headline goes, the answer to any headline question is "No".  How do you get away
 with no automated testing? If we go back to gaining confidence that the software that's created works,
 the best confidence to see that the software works is to validate it in production.
-
-Just let your users test! Right???
-
-Obviously, since you would be subject your users to potential buggy software, you would want to have
+- Just let your users test! Right???
+- Obviously, since you would be subject your users to potential buggy software, you would want to have
 good monitoring systems and a good, quick rollback strategy.  Monitor system to detect
 issues, and rollback strategy to fix the bugs.
-
-It also depends on what are the impacts on the users if there are issues.  If you are creating
+- It also depends on what are the impacts on the users if there are issues.  If you are creating
 financial software where you could cost your users millions of dollars due to bugs,
 then it probably isn't a great idea to validate your software in production.
-
-However, if you are building a simple web app to display information, then it might be okay to validate
+- However, if you are building a simple web app to display information, then it might be okay to validate
 in production.
- 
+
 
 ## To summarize
 
-We are not paid to write tests.  We are paid to produce software that delivers business value.
-
-Tests help us increase confidence for the stakeholders that the software does produce the desired value.
-
-Automate the tests to prevent human error (which would reduce the confidence the tests provide).
-
-You can let your users test the system, but only if you have the write tools and it's the right domain. 
+- Software should deliver business value.
+- Tests increase confidence for the stakeholders through evidence.
+- Automate away human error.
+- Forgo testing with caution. 
  
 
 # Test-Driven Development
+
+![test-driven development](/slides/testing/tdd.png) <!-- .element width="60%" -->
+
+note:
+Has anyone here never heard of test driven development?
+One observation:
+- almost everyone that I know always consider the "red" phase as the starting point
 
  
 ## Why do we do TDD?
@@ -89,10 +128,6 @@ You can let your users test the system, but only if you have the write tools and
 - Tests <!-- .element class="fragment" -->
 - Test-first <!-- .element class="fragment" -->
 
-note:
-- we are not paid to write tests
-- we are paid to deliver business value through software.
-    - especially when considering short term vs long term
 
 ## History TDD / BDD and Unit Testing
 (according to Kent Beck, as I understand it...)
@@ -149,11 +184,16 @@ instead of an implementation standpoint.
 Kent remembered a book talking about programmers writing out the expected output on the output tape,
 before the program was written.
 
-"Programmers always have written test first."
+"Programmers always have written test first." (1950s or 1960s)
 
 "Kent re-discovered."
 
 
+## Benefits of TDD
+
+note:
+- high functional code coverage
+- regression
 
 ## The Testing Pyramid
 Types of Tests
@@ -167,5 +207,3 @@ Confidence
 Clean
 Freedom to Refactor
 Fast
-
-## Mocks and Test Doubles
