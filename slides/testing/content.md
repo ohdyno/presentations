@@ -180,41 +180,39 @@ Fast vs Confidence (mocking)
 ### A: How is the quality of my test suite?
 
 note:
-Growth of your system:
+The qualities of the test suite changes as the software system grows
 - Early on, mostly integration issues. Test those integrations.
 - As domain gets richer, introduce more class-level tests, component-level tests, etc.
 
 
-## Two Schools of TDD
-
-![xp explained](/slides/testing/xp-explained.jpg) <!-- .element width="40%" -->
-![goos](/slides/testing/goos.jpg) <!-- .element width="40%" -->
+## Example: Mocking / Test Doubles
 
 note:
-- inside out vs outside in
-- functional verification vs design feedback
-
-
-### When testing gets difficult, improve the design of your code
+- One of the most common tool that we use are test doubles, lets look at how they affect the qualities of
+the test suite?
 
 
 ## Test Doubles
-
 - Dummy
-- Stub
-- Spy
+- Stub (Read)
+- Spy (Write)
 - Mock
-
 - Fake
 
 note:
-- Test doubles are standins for the real thing.
+- Test doubles are standins for the real dependencies your software have.
 - Inside out (detroit school) uses test doubles sparingly, decreases confidence,
 only for scenarios that you cannot control (network).
-- Outside in (london school) stubs, spies, and mocks extensively. 
-- risk of building the wrong thing vs over-mocking due to poor design leading to difficulty in refactoring
-- both get hard when the production design is poor
+- Outside in (london school) stubs, spies, and mocks extensively.
 
+
+## Qualities of a Good Test Suite
+- Confidence
+- Clean
+- Freedom to Refactor
+- Fast
+
+How do tests using extensive test doubles affect these qualities?
 
 ---
 
@@ -230,3 +228,7 @@ note:
 - Evaluate the tests against the qualities, not the test pyramid.  Composition of the test suite
 will always be changing as the software changes.
     - Including using test doubles.
+
+---
+
+# Q&A
