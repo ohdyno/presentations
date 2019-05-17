@@ -107,9 +107,10 @@ in production.
 - Tests increase confidence for the stakeholders through evidence.
 - Automate away human error.
 - Forgo testing with caution. 
- 
 
-# Test-Driven Development
+---
+
+## Test-Driven Development
 
 ![test-driven development](/slides/testing/tdd.png) <!-- .element width="60%" -->
 
@@ -129,21 +130,20 @@ One observation:
 - Test-first <!-- .element class="fragment" -->
 
 
-## History TDD / BDD and Unit Testing
+## History TDD
+
+![kent beck](/slides/testing/kent.jpg)
+
 (according to Kent Beck, as I understand it...)
 
-### History of Unit Testing
-Testers tested, Coders coded
-
-Sequential / Interdependent Tests
-
-notes:
-Initially tests were written by testers
+note:
+- Initial tests were written by testers, while coders coded.
+- Tests were sequential, not independent.
+- Tooling were mostly made for testers specifically (specialized domain).
 
 
-Developer Tests
-Unit test
-
+![software testing](/slides/testing/software-test.jpg) <!-- .element width="45%" -->
+![thumbs up](/slides/testing/thumbs-up.svg) <!-- .element width="29%" -->
 
 note:
 - Kent worked with a programmer who wrote 5 lines of tests for every 1 line of code.
@@ -154,24 +154,45 @@ note:
     - Kent was consulting with a client in Chicago.  Wants to do automated testing.
     - No good way to get developers to write automated tests.
     - Create Testing Framework from how Smalltalk developers produced software
-    - Create SUnit
 
 
-SUnit
-JUnit
-xUnit
+## Unit Testing
+
+- SUnit (Smalltalk)
+- JUnit (Java)
+- QUnit (Javascript)
+- NUnit (C#)
+- unittest (Python)
+- ...
+- (x)Unit
 
 note:
 - Kent create the SUnit (test first)
 - Kent and Eric Gamma pair programmed and created JUnit (97ish) (test first)
 - Kent shared JUnit with Martin Fowler
+- The framework 
 
 
+## Test-Driven Development
 
-Behavior-Driven Development
-Gherkin
-Cucumber
-RSpec
+...re-discovered <!-- .element class="fragment" -->
+
+note:
+- Now that developers have tools to use to easily write tests, test-first development is a viable activity.
+- It is not a new concept.
+- Around the time when he created SUnit, Kent remembered a book talking about programmers writing out the expected output on the output tape,
+before the program was written.
+- "Programmers always have written test first." (1950s or 1960s)
+- Kent thought that was a dumb idea, because the test is always going to fail.
+- "Kent re-discovered TDD."
+
+
+## Behavior-Driven Development
+
+![cucumber](/slides/testing/cucumber.png) <!-- .element width="60%" -->
+- Gherkin
+- Cucumber
+- RSpec
 
 note:
 - Dan North created the term to highlight the need to understand the software from a behavior standpoint
@@ -179,31 +200,22 @@ instead of an implementation standpoint.
 - He wanted to bridge the gap between communication between the business and the developers.
 
 
-### History of TDD
-
-Kent remembered a book talking about programmers writing out the expected output on the output tape,
-before the program was written.
-
-"Programmers always have written test first." (1950s or 1960s)
-
-"Kent re-discovered."
-
-
 ## Benefits of TDD
 
 note:
 - high functional code coverage
-- regression
+- fewer regression
+- harder to spot, but it reveals design shortcomings
+
 
 ## The Testing Pyramid
-Types of Tests
-Unit Test
-Integration Test
-E2E Test
-Names of test type should be reflective of what they do.
+
+![testing pyramid](/slides/testing/testing-pyramid.jpg) <!-- .element width="45%" -->
+![testing pyramid from cohn](/slides/testing/test-pyramid-cohn.png) <!-- .element width="45%" -->
+
 
 ## Qualities of a Test Suite
-Confidence
-Clean
-Freedom to Refactor
-Fast
+- Confidence
+- Clean
+- Freedom to Refactor
+- Fast
