@@ -189,10 +189,10 @@ before the program was written.
 
 ## Behavior-Driven Development
 
-![cucumber](/slides/testing/cucumber.png) <!-- .element width="30%" -->
+![dan north](/slides/testing/dan-north.jpg) <!-- .element width="30%" -->
+![cucumber](/slides/testing/cucumber.png) <!-- .element width="50%" -->
 - Gherkin
 - Cucumber
-- RSpec
 
 note:
 - Dan North created the term to highlight the need to understand the software from a behavior standpoint
@@ -249,6 +249,38 @@ Growth of your system:
 - Early on, mostly integration issues. Test those integrations.
 - As domain gets richer, introduce more class-level tests, component-level tests, etc.
 
+
+## Two Schools of TDD
+
+![xp explained](/slides/testing/xp-explained.jpg) <!-- .element width="45%" -->
+![goos](/slides/testing/goos.jpg) <!-- .element width="45%" -->
+
+note:
+- inside out vs outside in
+- functional verification vs design feedback
+
+
+### When testing gets difficult, improve the design of your code
+
+
+## Test Doubles
+
+- Dummy
+- Stub
+- Spy
+- Mock
+
+- Fake
+
+note:
+- Test doubles are standins for the real thing.
+- Inside out (detroit school) uses test doubles sparingly, decreases confidence,
+only for scenarios that you cannot control (network).
+- Outside in (london school) stubs, spies, and mocks extensively. 
+- risk of building the wrong thing vs over-mocking due to poor design leading to difficulty in refactoring
+- both get hard when the production design is poor
+
+
 ---
 
 ## Take Aways
@@ -262,3 +294,4 @@ note:
 - It's not easy, but it does get easier as you do it more often.
 - Evaluate the tests against the qualities, not the test pyramid.  Composition of the test suite
 will always be changing as the software changes.
+    - Including using test doubles.
