@@ -46,7 +46,12 @@ So, if software is only valuable when it is bringing business value...
 ![software testing](/slides/testing/software-test.jpg) <!-- .element width="60%" -->
 
 note:
-It certainly does not seem to bring in business value.
+On the surface, tt certainly does not seem to bring in business value.
+Increase the cost of developing software.
+- More people.
+- Could take longer for software to get into production.
+- Slows down delivery
+- ask for contribution?
 
 
 ## We test in order
@@ -75,9 +80,6 @@ Given that we've established the goal of testing.  Why do we want to automate te
 we need to test often, ideally very often.
 - However, we know that humans are not very good at doing repetitive tasks well.  So, we offload that responsibility
 to the machine.
-- Other considerations for automation.  Being able to automate a system requires a good understanding
-of the system (state, inputs, and output).  It challenges us to understand our system and make improvements
-if the system isn't easy to test in an automated fashion.
 **Question: Now, is it always necessary to do automate testing or testing in general?**
 
 
@@ -118,8 +120,9 @@ note:
 Has anyone here never heard of test driven development?
 One observation:
 - almost everyone that I know always consider the "red" phase as the starting point
+- define refactoring
 
- 
+
 ## Why do we do TDD?
 
 - Deliver business value <!-- .element class="fragment" -->
